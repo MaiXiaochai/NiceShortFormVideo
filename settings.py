@@ -44,11 +44,12 @@ class BaseConfig:
 
     # 下载的视频地址
     urls = [
+        "https://www.wtao.vip/douyin/video.php",
         "https://sp.nico.run/video.php",
         "http://www.kuaidoushe.com/video.php",
         "https://tvv.tw/xjj/kuaishou/video.php",
         "https://xjj.349457.xyz/video.php",
-        "http://wmsp.cc/video.php",  # 这个反爬虫，设置(2, 4)秒的随机sleep可解除
+        # "http://wmsp.cc/video.php",  # 这个反爬虫，设置(2, 4)秒的随机sleep可解除
         "http://dou.plus/get/get1.php",  # 这个也只能下载一些
         "http://dou.plus/get/get2.php",  # 这个也只能下载一些
     ]
@@ -60,7 +61,7 @@ class BaseConfig:
     ]
 
     # # 线程相关设置
-    parser_worker = 50  # 解析线程数
+    parser_worker = 30  # 解析线程数
     check_worker = 5  # 验证线程数
     save_worker = 10  # 下载线程数
 

@@ -175,6 +175,7 @@ speed-measure-plugin*.json
 
 # kuaidou
 videos/
+videos1/
 picked/
 PIPENV_VENV_IN_PROJECT/
 *.db
