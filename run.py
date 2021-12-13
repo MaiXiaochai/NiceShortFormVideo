@@ -28,7 +28,7 @@ db = DataBase()
 parser = Parser()
 lock = Lock()
 
-# 设置两个全局变量，减少对数据库的1~2查询访问
+# 设置两个全局变量，减少每次下载时对数据库的1~2次查询访问
 # 这个量比较小，如果量比较大的话，可以用redis做缓存
 g_urls = db.fetch_all_urls()
 g_md5 = db.fetch_all_hash()
