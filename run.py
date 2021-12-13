@@ -84,7 +84,7 @@ def url_parse(url):
             result = (r_url, content)
 
     except Exception:
-        # 这里没有将error记录到日志中，因为错误的类型和内容已非常熟悉，可以忽略，多整体影响不大
+        # 这里没有将error记录到日志中，因为错误的类型和内容已非常熟悉，可以忽略，对整体影响不大
         log.error(f"Bad | URL: [{url}]\n R_URL: {r_url}")
 
         # 进度
@@ -104,7 +104,7 @@ def url_parse(url):
 
 def video_check(item):
     """
-        检验视频对象是否满足保存要求
+        检验视频对象是否满足保存要求：主要是查重
     """
     global counter
     global existed_counter
