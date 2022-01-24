@@ -314,9 +314,41 @@ def demo_test():
     print(f"{size} MB")
 
 
+def demo2():
+    """
+        从API下载视频
+    """
+
+    names = set()
+    # 下载次数
+
+    times = 50
+    for i in range(1, times):
+        url = "https://www.cunshao.com/api/shipin"
+        try:
+            code, r_url, r_headers, resp = parser.get_html(url)
+            content = resp.content
+            print(f"NO.{i} | {r_url}")
+
+            name = r_url.split('/')[-1]
+
+            if name in names:
+                continue
+
+            file_path = path_join(save_dir, f"{name}")
+
+            # 保存文件
+            parser.save(file_path, content)
+
+            names.add(name)
+        except Exception as e:
+            pass
+
+
 if __name__ == '__main__':
     # demo_test()
     # demo()
     # download_with_url_from_file()  # 用于解析从文件中读取的url
     # diff_urls_in_file()
-    main()
+    # main()
+    demo2()

@@ -44,14 +44,15 @@ class BaseConfig:
 
     # 下载的视频地址
     urls = [
-        "https://www.wtao.vip/douyin/video.php",
-        "https://sp.nico.run/video.php",
-        "http://www.kuaidoushe.com/video.php",
-        "https://tvv.tw/xjj/kuaishou/video.php",
-        "https://xjj.349457.xyz/video.php",
+        "https://www.cunshao.com/api/shipin",  # 这是一个随机API
+        # "https://www.wtao.vip/douyin/video.php",
+        # "https://sp.nico.run/video.php",
+        # "http://www.kuaidoushe.com/video.php",
+        # "https://tvv.tw/xjj/kuaishou/video.php",
+        # "https://xjj.349457.xyz/video.php",
         # "http://wmsp.cc/video.php",  # 这个反爬虫，设置(2, 4)秒的随机sleep可解除
-        "http://dou.plus/get/get1.php",  # 这个也只能下载一些
-        "http://dou.plus/get/get2.php",  # 这个也只能下载一些
+        # "http://dou.plus/get/get1.php",  # 这个也只能下载一些
+        # "http://dou.plus/get/get2.php",  # 这个也只能下载一些
     ]
 
     # 备选的下载地址，这些下载地址或多或少有一些限制
